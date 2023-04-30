@@ -1,4 +1,4 @@
-# Description: This script automates the process of answering a question on Quora using GPT-3.
+# Description: An open-source Python program to automate generating images using the Midjourney bot on Discord. 
 # Author: harmindesinghnijjar
 # Date: 2023-04-29
 # Version: 1.0.0
