@@ -1,4 +1,5 @@
 # midjourney-automation-bot
+![SOoEiIS](https://user-images.githubusercontent.com/110620707/235405082-01be9472-2e53-4888-a3bb-daca425dbfd3.png)
 
 As seen on [LinkedIn](https://www.linkedin.com/posts/harmindersinghnijjar_sikhism-sikhi-punjab-activity-7058192758297022464-CPs6?utm_source=share&utm_medium=member_desktop).
 
