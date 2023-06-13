@@ -7,19 +7,15 @@ As seen on [LinkedIn](https://www.linkedin.com/posts/harmindersinghnijjar_sikhis
 The Midjourney Automation Bot is a highly efficient Python-based automation program designed to generate and download unique images using the Midjourney bot on Discord. The script employs OpenAI’s GPT-3 to construct image prompts and Playwright, a Node.js library to control Chromium, Firefox, and WebKit browsers, to interact with the Discord application in a browser environment.
 
 ### Key Features
-GPT-3 Prompt Generation: The bot uses GPT-3 to generate prompts based on user-defined specifications, such as art type, topic, and descriptors.
+<b>GPT-3 Prompt Generation:</b> The bot uses GPT-3 to generate prompts based on user-defined specifications, such as art type, topic, and descriptors.
 
-##### Discord Integration: 
-Through Playwright, the bot can navigate to the Discord channel URL where the Midjourney bot resides and submit the generated prompts.
+<b>Discord Integration:</b> Through Playwright, the bot can navigate to the Discord channel URL where the Midjourney bot resides and submit the generated prompts.
 
-##### Image Upscaling: 
-Once the images are generated, the bot interacts with the Discord interface to select upscale options, improving the quality of the images.
+<b>Image Upscaling:</b> Once the images are generated, the bot interacts with the Discord interface to select upscale options, improving the quality of the images.
 
-##### Image Downloading: 
-After upscaling, the bot downloads the images, saving them locally with names corresponding to their prompts.
+<b>Image Downloading:</b> After upscaling, the bot downloads the images, saving them locally with names corresponding to their prompts.
 
-##### Iterative Execution: 
-The bot can be configured to run for a specific number of iterations, continuously generating prompts, submitting them, and downloading the images generated in each cycle.
+<b>Iterative Execution:</b> The bot can be configured to run for a specific number of iterations, continuously generating prompts, submitting them, and downloading the images generated in each cycle.
 
 ### Usage
 To run the bot, the user needs to set their OpenAI API key and populate several constant fields such as ART_TYPE, BOT_COMMAND, CHANNEL_URL, DESCRIPTORS, TOPIC, and PROMPT. The bot also needs user Discord credentials to log in, which are read from a "credentials.txt" file.
