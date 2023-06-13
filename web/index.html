@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-emerald-300 text-gray-100 px-8 py-12">
+    <div class="text-center w-full">
+        <!-- Add logo.png from folder to application -->
+        <img src="logo.png" class="mx-auto w-64" />
+    </div>
+    <div
+        class="max-w-screen-xl mt-8 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
+        <div class="flex flex-col justify-between">
+            <div>
+                <h2 class="text-4xl lg:text-5xl font-bold leading-tight">Let's automate Midjourney!</h2>
+                <div class="text-gray-700 mt-8">
+                    Need a freelancer? Send us an <a href="mailto:harmindernijjar1996@gmail.com"
+                        class="underline">email</a>.
+                </div>
+            </div>
+            <div class="">
+                <div>
+                    <span class="uppercase text-sm text-gray-600 font-bold">Bot Command</span>
+                    <input
+                        class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="text"  id="botCommand" value="/imagine" placeholder="Enter bot command">
+                </div>
+
+                <div class="mt-8">
+                    <span class="uppercase text-sm text-gray-600 font-bold">Channel URL</span>
+                    <input
+                        class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="text" id="channelURL" placeholder="Enter channel URL">
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col justify-between">
+            <div>
+                <div>
+                    <span class="uppercase text-sm text-gray-600 font-bold">Art Type</span>
+                    <input
+                        class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Enter art type" id="artType">
+                </div>
+                <div class="mt-8">
+                    <span class="uppercase text-sm text-gray-600 font-bold">Descriptors</span>
+                    <input
+                        class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Enter descriptors" id="descriptors">
+                </div>
+                <div class="mt-8">
+                    <span class="uppercase text-sm text-gray-600 font-bold">Topic</span>
+                    <input
+                        class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Enter topic" id="topic">
+                </div>
+            </div>
+            <div class="mt-8">
+                <button id="startBtn" class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline" ">
+                  Start Automation
+                </button>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="eel.js"></script>
+    <script>
+        const startBtn = document.querySelector('#startBtn');
+    
+        startBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            const art_type = document.getElementById("artType").value;
+            const bot_command = document.getElementById("botCommand").value;
+            const channel_url = document.getElementById("channelURL").value;
+            const descriptors = document.getElementById("descriptors").value;
+            const topic = document.getElementById("topic").value;
+    
+            if (!art_type || !bot_command || !channel_url || !descriptors || !topic) {
+                alert('Please fill all fields');
+                return;
+            }
+    
+            // Call the Python function via Eel to start the bot
+            eel.start_bot(art_type, bot_command, channel_url, descriptors, topic)();
+        });
+    </script>
+</body>
+</html>
