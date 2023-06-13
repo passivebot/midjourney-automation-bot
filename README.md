@@ -1,5 +1,5 @@
 # midjourney-automation-bot
-![SOoEiIS](https://user-images.githubusercontent.com/110620707/235405082-01be9472-2e53-4888-a3bb-daca425dbfd3.png)
+![GUI](https://github.com/passivebot/midjourney-automation-bot/blob/8efd67a4e6e09b844db6da809469fbe26e90a60f/chrome_zrfWeRJEmB.png)
 
 As seen on [LinkedIn](https://www.linkedin.com/posts/harmindersinghnijjar_sikhism-sikhi-punjab-activity-7058192758297022464-CPs6?utm_source=share&utm_medium=member_desktop) and [YouTube](https://www.youtube.com/watch?v=IJ0jNhrKQ34).
 
