@@ -6,6 +6,9 @@ As seen on [LinkedIn](https://www.linkedin.com/posts/harmindersinghnijjar_sikhis
 
 The Midjourney Automation Bot is a highly efficient Python-based automation program designed to generate and download unique images using the Midjourney bot on Discord. The script employs OpenAI’s GPT-3 to construct image prompts and Playwright, a Node.js library to control Chromium, Firefox, and WebKit browsers, to interact with the Discord application in a browser environment.
 
+### Customization
+This program can be customized to your personal/organizational needs. For more information, please contact me via [LinkedIn](https://www.linkedin.com/in/harmindersinghnijjar/) or email at harmindernijjar1996@gmail.com
+
 ### Key Features
 <b>GPT-3 Prompt Generation:</b> The bot uses GPT-3 to generate prompts based on user-defined specifications, such as art type, topic, and descriptors.
 
