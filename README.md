@@ -3,30 +3,50 @@
 
 As seen on [LinkedIn](https://www.linkedin.com/posts/harmindersinghnijjar_sikhism-sikhi-punjab-activity-7058192758297022464-CPs6?utm_source=share&utm_medium=member_desktop) and [YouTube](https://www.youtube.com/watch?v=IJ0jNhrKQ34).
 
+# Midjourney Automation Bot
 
-The Midjourney Automation Bot is a highly efficient Python-based automation program designed to generate and download unique images using the Midjourney bot on Discord. The script employs OpenAI’s GPT-3 to construct image prompts and Playwright, a Node.js library to control Chromium, Firefox, and WebKit browsers, to interact with the Discord application in a browser environment.
+The Midjourney Automation Bot is a script that automates image generation using the OpenAI GPT-3 model. It interacts with Discord channels and generates images based on user prompts. This bot can be used to create various types of art, such as illustrations, digital paintings, or sketches.
 
-### Customization
-This program can be customized to your personal/organizational needs. For more information, please contact me via [LinkedIn](https://www.linkedin.com/in/harmindersinghnijjar/) or email at harmindernijjar1996@gmail.com
+## How it Works
 
-### Key Features
-<b>GPT-3 Prompt Generation:</b> The bot uses GPT-3 to generate prompts based on user-defined specifications, such as art type, topic, and descriptors.
+1. The bot logs into Discord using user credentials provided in a secure configuration file.
+2. The bot opens the specified channel on Discord.
+3. The bot sends a command to generate an image based on the user's prompt.
+4. The bot waits for the upscale options to appear and selects them.
+5. The bot downloads the upscaled images.
 
-<b>Discord Integration:</b> Through Playwright, the bot can navigate to the Discord channel URL where the Midjourney bot resides and submit the generated prompts.
+The prompt can include descriptors and a topic to guide the image generation process. The bot uses the OpenAI GPT-3 model to generate the image based on the prompt. The generated images are then downloaded and saved.
 
-<b>Image Upscaling:</b> Once the images are generated, the bot interacts with the Discord interface to select upscale options, improving the quality of the images.
+## Features
 
-<b>Image Downloading:</b> After upscaling, the bot downloads the images, saving them locally with names corresponding to their prompts.
+- Logging: The bot logs its actions and any errors during the image generation process.
+- API Key Management: The bot allows users to set the OpenAI API key through different methods, such as a file, environment variable, or console input.
+- Customizable Upscale Options: The bot selects, and downloads upscaled images based on user-defined upscale options.
+- Web Interface: The bot provides a user-friendly web interface powered by Eel, allowing users to interact with and control the bot easily.
 
-<b>Iterative Execution:</b> The bot can be configured to run for a specific number of iterations, continuously generating prompts, submitting them, and downloading the images generated in each cycle.
+## Getting Started
 
-### Usage
-To run the bot, the user needs to set their OpenAI API key and populate several constant fields such as ART_TYPE, BOT_COMMAND, CHANNEL_URL, DESCRIPTORS, TOPIC, and PROMPT. The bot also needs user Discord credentials to log in, which are read from a "credentials.txt" file.
+To get started with the Midjourney Automation Bot, follow these steps:
 
-### Error Handling
-The bot has robust error handling, making it resilient against issues arising during execution, such as empty prompts or responses, difficulties interacting with Discord's UI, and potential issues in image downloading.
+1. Clone the repository: `git clone https://github.com/passivebot/midjourney-automation-bot.git`
+2. Install the required dependencies: `pip install -r requirements.txt`
+3. Customize the bot's behavior by modifying the values in the script, such as the bot command, channel URL, prompt, etc.
+4. Run the bot: `python midjourney_automation_script.py`
 
-The Midjourney Automation Bot, leveraging GPT-3's creative potential and Playwright's browser automation capabilities, offers an efficient and scalable solution to generate and download unique images from the Midjourney bot on Discord.
+## Usage
+
+Once the bot runs, it will automatically log into Discord, open the specified channel, and send the bot command with the given prompt. The bot will then wait for the upscale options, select them, and download the upscaled images.
+
+You can interact with the bot through the web interface, which you can access by opening `index.html` in your preferred web browser. The web interface allows you to start the bot, configure the bot parameters, and monitor the bot's progress and log messages.
+
+## License
+
+The Midjourney Automation Bot is licensed under the [MIT License](https://github.com/passivebot/midjourney-automation-bot/blob/main/LICENSE).
+
+## Credits
+
+Passivebot developed this bot.
+
 
 
 
