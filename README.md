@@ -1,11 +1,25 @@
-# midjourney-automation-bot
+# Midjourney Automation Bot
+
 ![GUI](https://github.com/passivebot/midjourney-automation-bot/blob/8efd67a4e6e09b844db6da809469fbe26e90a60f/chrome_zrfWeRJEmB.png)
+
+The Midjourney Automation Bot is a script that automates image generation using the OpenAI GPT-3 model. It interacts with Discord channels and generates images based on user prompts. This bot can be used to create various types of art, such as illustrations, digital paintings, or sketches.
 
 As seen on [LinkedIn](https://www.linkedin.com/posts/harmindersinghnijjar_sikhism-sikhi-punjab-activity-7058192758297022464-CPs6?utm_source=share&utm_medium=member_desktop) and [YouTube](https://www.youtube.com/watch?v=IJ0jNhrKQ34).
 
-# Midjourney Automation Bot
+## Contact
 
-The Midjourney Automation Bot is a script that automates image generation using the OpenAI GPT-3 model. It interacts with Discord channels and generates images based on user prompts. This bot can be used to create various types of art, such as illustrations, digital paintings, or sketches.
+For any queries or freelance opportunities, please get in touch with me via [LinkedIn](https://www.linkedin.com/in/harmindersinghnijjar/) or email at harmindernijjar1996@gmail.com
+
+## Table of Contents
+
+- [How it Works](#how-it-works)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Customization](#customization)
+- [License](#license)
+- [Credits](#credits)
+- [Contact](#contact)
 
 ## How it Works
 
@@ -30,8 +44,9 @@ To get started with the Midjourney Automation Bot, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/passivebot/midjourney-automation-bot.git`
 2. Install the required dependencies: `pip install -r requirements.txt`
-3. Customize the bot's behavior by modifying the values in the script, such as the bot command, channel URL, prompt, etc.
-4. Run the bot: `python midjourney_automation_script.py`
+3. Run the bot: `python midjourney_automation_script.py`
+4. Customize the bot's behavior by modifying the values in the GUI, such as the bot command, channel URL, prompt, etc.
+5. Click "Start Automation" to start generating images.
 
 ## Usage
 
@@ -39,13 +54,18 @@ Once the bot runs, it will automatically log into Discord, open the specified ch
 
 You can interact with the bot through the web interface, which you can access by opening `index.html` in your preferred web browser. The web interface allows you to start the bot, configure the bot parameters, and monitor the bot's progress and log messages.
 
+## Customization
+
+The bot is designed with customization in mind. Users can modify various parameters and settings according to their needs. You can set the OpenAI API key, choose the upscale options, decide the Discord channel, and much more. To make these customizations, simply adjust the values in the GUI before starting the bot.
+
 ## License
 
 The Midjourney Automation Bot is licensed under the [MIT License](https://github.com/passivebot/midjourney-automation-bot/blob/main/LICENSE).
 
 ## Credits
 
-Passivebot developed this bot.
+Developed by [Harminder Singh Nijjar](https://github.com/harmindersinghnijjar)
+
 
 
 
