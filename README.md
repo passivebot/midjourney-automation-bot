@@ -19,7 +19,6 @@ For any queries or freelance opportunities, please get in touch with me via [Lin
 - [Customization](#customization)
 - [License](#license)
 - [Credits](#credits)
-- [Contact](#contact)
 
 ## How it Works
 
