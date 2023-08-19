@@ -2,7 +2,7 @@
 
 ![GUI](https://github.com/passivebot/midjourney-automation-bot/blob/8efd67a4e6e09b844db6da809469fbe26e90a60f/chrome_zrfWeRJEmB.png)
 
-The Midjourney Automation Bot is a script that automates image generation using the OpenAI GPT-3 model. It interacts with Discord channels and generates images based on user prompts. This bot can be used to create various types of art, such as illustrations, digital paintings, or sketches.
+The Midjourney Automation Bot is a FREE script that automates image generation using the OpenAI GPT-3 model. It interacts with Discord channels and generates images based on user prompts. This bot can be used to create various types of art, such as illustrations, digital paintings, or sketches.
 
 As seen on [LinkedIn](https://www.linkedin.com/posts/harmindersinghnijjar_sikhism-sikhi-punjab-activity-7058192758297022464-CPs6?utm_source=share&utm_medium=member_desktop) and [YouTube](https://www.youtube.com/watch?v=IJ0jNhrKQ34).
 
