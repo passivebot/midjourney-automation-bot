@@ -182,7 +182,7 @@ async def generate_prompt_and_submit_command(page, prompt: str):
     try:
         prompt_text = gpt3_midjourney_prompt(prompt)
         random_sleep()
-        pill_value_locator = 'xpath=//*[@id="app-mount"]/div[2]/div[1]/div[1]/div/div[2]/div/div/div/div/div[3]/div/main/form/div/div[2]/div/div[2]/div/div/div/span[2]/span[2]'
+        pill_value_locator = 'span.optionPillValue-2uxsMp'
         await page.fill(pill_value_locator, prompt_text)
         random_sleep()
         await page.keyboard.press("Enter")
@@ -191,6 +191,7 @@ async def generate_prompt_and_submit_command(page, prompt: str):
     except Exception as e:
         logger.error(f"An error occurred while submitting the prompt: {e}")
         raise e
+
 
 @eel.expose
 def gpt3_midjourney_prompt(prompt: str, engine='text-davinci-003', temp=0.7, top_p=1.0, tokens=400, freq_pen=0.0, pres_pen=0.0) -> str:
@@ -391,15 +392,16 @@ async def send_bot_command(page, command: str, PROMPT: str):
     """
     try:
         logger.info("Clicking on chat bar.")
-        chat_bar = page.locator('xpath=//*[@id="app-mount"]/div[2]/div[1]/div[1]/div/div[2]/div/div/div/div/div[3]/div[2]/main/form/div/div[1]/div/div[3]/div/div[2]/div')
+        chat_bar = page.get_by_role('textbox', name='Message #general')
         await asyncio.sleep(random.randint(1, 5))
 
         logger.info("Typing in bot command")
         await chat_bar.fill(command)
+        #await chat_bar.fill(command)
         await asyncio.sleep(random.randint(1, 5))
 
         logger.info("Selecting the prompt option in the suggestions menu")
-        prompt_option = page.locator('xpath=/html/body/div[1]/div[2]/div[1]/div[1]/div/div[2]/div/div/div/div/div[3]/div[2]/main/form/div/div[2]/div/div/div[2]/div[1]/div/div/div')
+        prompt_option = page.locator("#autocomplete-0 > .base-2v-uc0")
         await asyncio.sleep(random.randint(1, 5))
         await prompt_option.click()
 
@@ -407,7 +409,7 @@ async def send_bot_command(page, command: str, PROMPT: str):
         await generate_prompt_and_submit_command(page, PROMPT)
 
     except Exception as e:
-        logger.error(f"An error occurred while sending the bot command: {e}")
+        logger.exception(f"An error occurred while sending the bot command: {e}")
         raise e
 
 @eel.expose
