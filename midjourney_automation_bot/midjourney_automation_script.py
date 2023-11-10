@@ -401,9 +401,12 @@ async def send_bot_command(page, command: str, PROMPT: str):
         await asyncio.sleep(random.randint(1, 5))
 
         logger.info("Selecting the prompt option in the suggestions menu")
-        prompt_option = page.locator("#autocomplete-0 > .base-2v-uc0")
+        prompt_option_selector = "#autocomplete-0 > .base-2v-uc0"
+        await page.wait_for_selector(prompt_option_selector, state='visible', timeout=10000)
+        prompt_option = page.locator(prompt_option_selector)
         await asyncio.sleep(random.randint(1, 5))
         await prompt_option.click()
+
 
         logger.info("Generating prompt using OpenAI's API.")
         await generate_prompt_and_submit_command(page, PROMPT)
